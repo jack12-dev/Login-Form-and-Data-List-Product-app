@@ -2,7 +2,7 @@
 
 Muhamad Gian Novridan
 3337220019
-Kelas A
+Kelas B
 Prodi Informatika
 Universitas Sultan Ageng Tirtayasa
 
