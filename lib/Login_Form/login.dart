@@ -123,7 +123,9 @@ class HomePage extends StatelessWidget {
                       FadeInUp(
                           duration: Duration(milliseconds: 1600),
                           child: MaterialButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/home');
+                            },
                             height: 50,
                             // margin: EdgeInsets.symmetric(horizontal: 50),
                             color: Colors.orange[900],
