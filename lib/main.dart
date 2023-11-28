@@ -15,12 +15,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.orange,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.orange,
+        ),
       ),
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
         '/home': (context) => const MyHomePage(
-              title: '',
+              title: 'Daftar Produk',
             ),
       },
     );
@@ -134,7 +137,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         _deleteUser(_foundUsers[index]["id"]);
                       },
                       background: Container(
-                        color: Colors.red,
+                        color: Colors.orange,
                         child: Icon(Icons.delete),
                         alignment: Alignment.centerRight,
                         padding: EdgeInsets.only(right: 16),
@@ -208,6 +211,7 @@ class _AddUserScreenState extends State<AddUserScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Tambah Produk"),
+        backgroundColor: Colors.orange,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -236,6 +240,9 @@ class _AddUserScreenState extends State<AddUserScreen> {
                   'harga': _hargaController.text,
                 });
               },
+              style: ElevatedButton.styleFrom(
+                primary: Colors.orange, // Warna latar belakang tombol
+              ),
               child: Text("Tambah Produk"),
             ),
           ],
